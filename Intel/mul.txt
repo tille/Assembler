@@ -1,0 +1,83 @@
+#SimuProc 1.4.3.0
+      MOV FDA,AX
+      INC AX
+      MOV FDB,AX  ;Para recorrer las filas de A
+      INC AX
+      MOV FDC,AX
+
+      MOV BX,FDA ; BX = 0
+
+
+      LDT "ENTRE FILAS DE LA MATRIZ A"
+      MOV DD0,AX
+
+      LDT "ENTRE COLUMNAS DE LA MATRIZ A"
+      MOV DD1,AX
+
+      MOV AX,DD0
+      MUL DD1
+      MOV CX,AX
+      MOV BX,28D
+
+      LDT "ENTRE UN ELEMENTO A LA MATRIZ A "
+      STB E00
+      INC BX
+      LOOP 00E; CICLO PARA LLENAR LA MATRIZ A
+
+
+      MOV BX,FDA ; BX = 0
+      LDT "ENTRE FILAS DIMENSIÓN DE LA MATRIZ B"
+      MOV DD2,AX
+
+      LDT "ENTRE COLUMNAS DIMENSIÓN DE LA MATRIZ B"
+      MOV DD3,AX
+
+      MOV AX,DD2
+      MUL DD3
+      MOV CX,AX
+
+      CLA
+      MOV BX,AX
+
+      LDT "ENTRE UN ELEMENTO A LA MATRIZ B "
+      STB F00
+      INC BX
+      LOOP 01C; CICLO PARA LLENAR LA MATRIZ B
+
+      CLA
+      MOV 2C0,AX
+
+      MSG "0 - PARA TRASPONER LA MATRIZ A"
+      MSG "Diferente de 1 - PARA TRASPONER LA MATRIZ B"
+      LDT
+
+      CMP 28E
+      JME 38; SALTA A TRASPONER MATRIZ A
+
+      MOV CX,DD3 ; CICLO CX HASTA #COLUMNAS DE B
+      MOV 29A,CX ; AKI CICLO 1 '{'
+
+      MOV AX,DD3
+      SUB 29A
+      MOV 2D0,AX
+
+      MOV CX,DD2 ; CICLO 2 '{'
+
+      MOV BX,2D0
+      LDB F00
+      MOV BX,2C0
+      STB 320
+      INC 2C0
+      MOV AX,DD3
+      ADD 2D0
+      MOV 2D0,AX
+
+      LOOP 2D; CIERRA CICLO 2 '}'
+
+      MOV CX,29A
+      LOOP 28; CIERRA CICLO 1 '}'
+
+      HLT
+#28D
+0
+1

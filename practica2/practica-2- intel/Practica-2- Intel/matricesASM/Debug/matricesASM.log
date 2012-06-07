@@ -1,0 +1,55 @@
+﻿Build started 11/15/2011 7:29:16 AM.
+     1>Project "C:\Users\tille\Desktop\Todo\Tille\ASM\practica2\Practica2\practica-2- intel\Practica-2- Intel\matricesASM\matricesASM.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\matricesASM.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\matricesASM.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\matricesASM.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt matricesASM.cpp
+         matricesASM.cpp
+     1>c:\users\tille\desktop\todo\tille\asm\practica2\practica2\practica-2- intel\practica-2- intel\matricesasm\matricesasm.cpp(31): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : see declaration of 'scanf'
+     1>c:\users\tille\desktop\todo\tille\asm\practica2\practica2\practica-2- intel\practica-2- intel\matricesasm\matricesasm.cpp(33): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : see declaration of 'scanf'
+     1>c:\users\tille\desktop\todo\tille\asm\practica2\practica2\practica-2- intel\practica-2- intel\matricesasm\matricesasm.cpp(38): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : see declaration of 'scanf'
+     1>c:\users\tille\desktop\todo\tille\asm\practica2\practica2\practica-2- intel\practica-2- intel\matricesasm\matricesasm.cpp(43): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : see declaration of 'scanf'
+     1>c:\users\tille\desktop\todo\tille\asm\practica2\practica2\practica-2- intel\practica-2- intel\matricesasm\matricesasm.cpp(45): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : see declaration of 'scanf'
+     1>c:\users\tille\desktop\todo\tille\asm\practica2\practica2\practica-2- intel\practica-2- intel\matricesasm\matricesasm.cpp(50): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : see declaration of 'scanf'
+     1>c:\users\tille\desktop\todo\tille\asm\practica2\practica2\practica-2- intel\practica-2- intel\matricesasm\matricesasm.cpp(56): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128) : see declaration of 'getch'
+     1>c:\users\tille\desktop\todo\tille\asm\practica2\practica2\practica-2- intel\practica-2- intel\matricesasm\matricesasm.cpp(130): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128) : see declaration of 'getch'
+     1>c:\users\tille\desktop\todo\tille\asm\practica2\practica2\practica-2- intel\practica-2- intel\matricesasm\matricesasm.cpp(222): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128) : see declaration of 'getch'
+     1>c:\users\tille\desktop\todo\tille\asm\practica2\practica2\practica-2- intel\practica-2- intel\matricesasm\matricesasm.cpp(138): warning C4101: 'C3' : unreferenced local variable
+     1>c:\users\tille\desktop\todo\tille\asm\practica2\practica2\practica-2- intel\practica-2- intel\matricesasm\matricesasm.cpp(230): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : see declaration of 'scanf'
+     1>c:\users\tille\desktop\todo\tille\asm\practica2\practica2\practica-2- intel\practica-2- intel\matricesasm\matricesasm.cpp(260): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128) : see declaration of 'getch'
+     1>c:\users\tille\desktop\todo\tille\asm\practica2\practica2\practica-2- intel\practica-2- intel\matricesasm\matricesasm.cpp(267): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(304) : see declaration of 'scanf'
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\matricesASM.exe.embed.manifest.res" Debug\matricesASM_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\tille\Desktop\Todo\Tille\ASM\practica2\Practica2\practica-2- intel\Practica-2- Intel\Debug\matricesASM.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\matricesASM.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\tille\Desktop\Todo\Tille\ASM\practica2\Practica2\practica-2- intel\Practica-2- Intel\Debug\matricesASM.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tille\Desktop\Todo\Tille\ASM\practica2\Practica2\practica-2- intel\Practica-2- Intel\Debug\matricesASM.lib" /MACHINE:X86 Debug\matricesASM.exe.embed.manifest.res
+         Debug\matricesASM.obj
+         Debug\stdafx.obj
+         LINK : C:\Users\tille\Desktop\Todo\Tille\ASM\practica2\Practica2\practica-2- intel\Practica-2- Intel\Debug\matricesASM.exe not found or not built by the last incremental link; performing full link
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\matricesASM.exe.embed.manifest" /manifest Debug\matricesASM.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         matricesASM.vcxproj -> C:\Users\tille\Desktop\Todo\Tille\ASM\practica2\Practica2\practica-2- intel\Practica-2- Intel\Debug\matricesASM.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\matricesASM.unsuccessfulbuild".
+         Touching "Debug\matricesASM.lastbuildstate".
+     1>Done Building Project "C:\Users\tille\Desktop\Todo\Tille\ASM\practica2\Practica2\practica-2- intel\Practica-2- Intel\matricesASM\matricesASM.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:10.03

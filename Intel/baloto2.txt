@@ -1,0 +1,15 @@
+		/*MOV ECX,2 // COLUMNAS
+ciclo1:	MOV EBX,ECX
+
+		MOV ECX,2 // FILAS
+ciclo2:	MOV EDX,ECX
+
+		-
+		-
+		-
+
+		MOV ECX,EDX
+		LOOP ciclo2
+
+		MOV ECX,EBX
+		LOOP ciclo1*/

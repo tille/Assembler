@@ -1,0 +1,62 @@
+inicio
+	var a = tam = 0
+	mientras( a != 3 )haga		
+		imprima "0 - para llenar vectores"
+		imprima "1 - para sumar vectores"
+		imprima "2 - para restar vectores"
+		imprima "3 - para salir"
+		
+		lea a		
+		si ( a == 0 ) ent.
+			lea tam
+			var bx = 0
+			var cx = tam
+			while( cx > 0 )haga
+				cx = cx - 1
+				lea num
+				vec1[FDA + bx] = num
+				bx = bx + 1
+			fin-mientras
+			var bx
+			var cx = tam
+			while( cx > 0 )haga
+				cx = cx - 1
+				lea num
+				vec1[FDA + bx] = num
+				bx = bx + 1
+			fin-mientras
+		fin-si
+		si ( a == 1 ) ent.
+			si( tam == 0 )end
+			 	imprima "no se han ingresado vectores"
+				continue // significa brincar a la proxima iteracion del ciclo
+			fin-si
+			bx = 0
+			cx = tam
+			imprima "la suma de vectores es: "
+			while( cx > 0 )haga
+				cx = cx - 1
+				var temp = vec1[FDA+bx];
+				temp = vect2[FDD + bx] + temp
+				imprima temp
+				bx = bx + 1
+			fin-mientras
+		fin-si
+		si ( a == 2 ) ent.
+			si( tam == 0 )end
+			 	imprima "no se han ingresado vectores"
+				continue // significa brincar a la proxima iteracion del ciclo
+			fin-si
+			bx = 0
+			cx = tam
+			imprima "la resta de vectores es: "
+			while( cx > 0 )haga
+				cx = cx - 1
+				var temp = vec1[FDA+bx];
+				temp = vect2[FDD + bx] - temp
+				imprima temp
+				bx = bx + 1
+			fin-mientras
+		fin-si
+	fin-mientras
+fin

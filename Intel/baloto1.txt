@@ -1,0 +1,53 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int cont=0;
+
+int leer(int vector1[6]){
+
+	int vector2[6];
+
+		for(int i=0; i<6; i++){
+			cout<<"ingrese los los valores del vector en la posicion "<<i<< ":";
+			cin>>vector2[i];
+		}	
+
+		int result=0;
+
+		_asm{
+
+	   MOV EBX,[EBP+8]
+	   LEA EDX,vector2
+	   MOV ECX,6
+ciclo: MOV EDI,ECX
+	   DEC EDI
+	   MOV EAX,[EBX+EDI*4]
+	   cmp EAX,[EDX+EDI*4]
+	   JNE siguiente
+	   INC result
+	   MOV [EBX+EDI*4],EBX
+
+siguiente: LOOP ciclo
+
+}
+		return result;
+
+	};
+
+int main (){
+
+	
+	int vector1[6];
+	
+	for(int i=0; i<6; i++){
+		vector1[i]=i+1;
+	}
+	cout<<"el numero de iguales es "<<leer(vector1)<<"\n";
+	system("pause");
+	
+	return 0;
+}
+
+

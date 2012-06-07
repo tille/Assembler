@@ -1,0 +1,61 @@
+A[f*(#c*4)+c*4]
+TA[c*(#f*4)+f*4]
+
+
+
+	int A[2][2] = {1,2,3,4};
+	int TA[2][2];
+	int filas = 2, columnas = 2, result, result2;
+	int indF = 0,indC = 0;
+
+	_asm{
+		//LEA EBX,A
+		//MOV EAX,[EBX+4]
+		//MOV result,EAX
+
+		MOV ECX,filas
+ciclo1:	MOV EBX,ECX
+
+		MOV ECX,columnas
+		MOV indC,0
+ciclo2: MOV EDI,ECX
+
+		MOV EAX,4
+		MUL indC
+		MOV result,EAX
+		MOV EAX,4
+		MUL columnas
+		MUL indF
+		ADD EAX,result
+		LEA EDX,A
+		MOV EAX,[EDX+EAX]
+		MOV result,EAX
+
+		MOV EAX,4
+		MUL indF
+		MOV result2,EAX
+		MOV EAX,4
+		MUL filas
+		MUL indC
+		ADD EAX,result2
+		LEA EDX,TA
+		MOV ESI,result
+		MOV [EDX+EAX],ESI
+
+		MOV ECX,EDI
+		INC indC
+		LOOP ciclo2
+
+		MOV ECX,EBX
+		INC indF
+		LOOP ciclo1
+	
+	}
+	cout << "La Matriz Traspuesta a quedado guardada exitosamente en TA: \n\n";
+	for( int i = 0; i<2; i++ ){
+		for( int j = 0; j<2; j++ ){
+			cout << TA[i][j];
+			if(j!=1) cout << " ";
+		}
+		cout << endl;
+	}

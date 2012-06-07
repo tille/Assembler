@@ -1,0 +1,6 @@
+gdb ./a.out
+break break
+run
+info register
+info variables
+inspect buffer
